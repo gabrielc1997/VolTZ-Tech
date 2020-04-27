@@ -1,0 +1,1 @@
+botão do banner abrir modal com apenas campos de email e nome
