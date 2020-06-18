@@ -17,12 +17,13 @@
     .bdc-#{$class}-event:hover, .bdc-#{$class}-event:active, .bdc-#{$class}-event:focus {
         border-color: $color !important;
     }
+
 }
 
+
 @include defineColor('white', $white);
-@include defineColor('gray', $gray);
-@include defineColor('orange', $orange);
-@include defineColor('purple', $purple);
-@include defineColor('yellow', $yellow);
-@include defineColor('green', $green);
+@include defineColor('blue', $blue);
+@include defineColor('light-blue', $light-blue);
+@include defineColor('dark-gray', $dark-gray);
+@include defineColor('light-gray', $light-gray);
 @include defineColor('black', $black);
