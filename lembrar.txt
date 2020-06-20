@@ -1,2 +1,8 @@
 botão do banner abrir modal com apenas campos de email e nome
 subir no github.io ./node_modules/.bin/gh-pages -d dist/
+
+git add *
+git commit -m "nome_da_atualização"
+git push
+
+git pull
