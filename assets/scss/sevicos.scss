@@ -1,0 +1,22 @@
+.servicos{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    .servicos-titulo{
+        padding-top: 24px;
+        padding-bottom: 24px;
+
+        h2{
+            font-size: 48px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .servicos-item{
+        .item-box{
+            height: 350px;
+            width: 100%;
+            padding: 24px;
+        }
+    }
+}
