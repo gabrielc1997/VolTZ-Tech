@@ -14,7 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+
+
 
 </head>
 
@@ -30,7 +34,11 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <div class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -39,20 +47,20 @@
                             <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Work</a>
+                            <a class="nav-link" href="#">Sobre</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">Cases</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-primary" href="#">GET A QUOTE</a>
+                            <a class="btn btn-primary" href="#">Orçamento</a>
                         </li>
 
                     </ul>
@@ -98,10 +106,10 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="container servicos-item">
             <div class="row">
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-12 js-tilt" data-tilt data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="500">
                     <div class="item-box bgc-light-gray d-flex align-items-center">
                         <div>
                             <h3>
@@ -113,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-12 js-tilt" data-tilt data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="500">
                     <div class="item-box bgc-light-gray d-flex align-items-center">
                         <div>
                             <h3>
@@ -125,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-12 js-tilt" data-tilt data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="500">
                     <div class="item-box bgc-light-gray d-flex align-items-center">
                         <div>
                             <h3>
@@ -153,16 +161,24 @@
                     </h2>
                     <div>
                         <p class="c-white text-center text-md-left">
-                            Estamos há 2 anos no mercado atendendo clientes de diversos segmentos e portes. Oferecemos o pacote completo de soluções web para as mais diversas necessidades e ramos de atividade, que vão desde a criação de um site, até a implementação da campanha de Marketing Digital.
+                            Estamos há 2 anos no mercado atendendo clientes de diversos segmentos e portes. Oferecemos o
+                            pacote completo de soluções web para as mais diversas necessidades e ramos de atividade, que
+                            vão desde a criação de um site, até a implementação da campanha de Marketing Digital.
                         </p>
                         <p class="c-white text-center text-md-left">
-                            Tratamos cada um de nossos clientes de forma individual. Analisando a fundo as necessidades especificas do negócio, somos capazes de oferecer soluções exclusívas de acordo com o orçamento disponível para o projeto. Nosso principal objetivo é maximizar os resultados de nossos clientes.
+                            Tratamos cada um de nossos clientes de forma individual. Analisando a fundo as necessidades
+                            especificas do negócio, somos capazes de oferecer soluções exclusívas de acordo com o
+                            orçamento disponível para o projeto. Nosso principal objetivo é maximizar os resultados de
+                            nossos clientes.
                         </p>
                         <p class="c-white text-center text-md-left">
-                            Acompanhamos de perto de todas as etapas da transformação do seu negócio: Planejamento, Criação, Produção, Veiculação de campanhas e Acompanhamento de resultados.
+                            Acompanhamos de perto de todas as etapas da transformação do seu negócio: Planejamento,
+                            Criação, Produção, Veiculação de campanhas e Acompanhamento de resultados.
                         </p>
                         <p class="c-white text-center text-md-left">
-                            A grande experiência de nossos profissionais nos permite identificar e implementar as melhores estratégias de comunicação para a sua empresa, adequando o orçamento aos objetivos do projeto.
+                            A grande experiência de nossos profissionais nos permite identificar e implementar as
+                            melhores estratégias de comunicação para a sua empresa, adequando o orçamento aos objetivos
+                            do projeto.
                         </p>
                     </div>
                 </div>
@@ -178,23 +194,85 @@
                     </h2>
                     <p class="text-center">
                         known, is dummy text used in laying out print, graphic or web designs. The passage is
-                        attributed  
+                        attributed
                         to an unknown typesetter in the 15th century who is thought to have scrambled parts
                     </p>
 
                 </div>
             </div>
         </div>
-        <div class="container cases-box">
-            <div class="row">
-                <div class="col-6">
-                    <div class="case-item bgc-light-gray d-flex align-items-center">
-
+        <div class="container cases-item">
+            <div class="row slick-carrosel">
+                <div class="col-md-4 col-12">
+                    <div class="item-box bgc-light-gray d-flex align-items-center">
+                        <div>
+                            <h3>
+                                Lorem ipsum
+                            </h3>
+                            <p>
+                                Lorem ipsum
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="case-item bgc-light-gray d-flex align-items-center">
-
+                <div class="col-md-4 col-12">
+                    <div class="item-box bgc-light-gray d-flex align-items-center">
+                        <div>
+                            <h3>
+                                Lorem ipsum
+                            </h3>
+                            <p>
+                                Lorem ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="item-box bgc-light-gray d-flex align-items-center">
+                        <div>
+                            <h3>
+                                Lorem ipsum
+                            </h3>
+                            <p>
+                                Lorem ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="item-box bgc-light-gray d-flex align-items-center">
+                        <div>
+                            <h3>
+                                Lorem ipsum
+                            </h3>
+                            <p>
+                                Lorem ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="item-box bgc-light-gray d-flex align-items-center">
+                        <div>
+                            <h3>
+                                Lorem ipsum
+                            </h3>
+                            <p>
+                                Lorem ipsum
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="item-box bgc-light-gray d-flex align-items-center">
+                        <div>
+                            <h3>
+                                Lorem ipsum
+                            </h3>
+                            <p>
+                                Lorem ipsum
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -205,12 +283,20 @@
             <div class="container bgc-blue">
                 <div class="row leades-footer d-flex align-items-center">
                     <div class="col-7">
-                        <p>
+                        <p class="c-white">
                             Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
                         </p>
                     </div>
-                    <div class="col-5">
-                        <input class="form-control" type="text" placeholder="Default input">
+                    <div class="col-5 d-flex">
+                        <div class="group d-flex flex-column">  
+                            <label class="c-white">Email</label>
+                            <input class="c-white" type="text" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="btn-enviar align-self-end">
+                            <a class="btn btn-primary" href="#">Enviar</a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -241,6 +327,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -250,6 +337,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js">
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="./assets/js/main.js"></script>
+
+
 </body>
 
 </html>

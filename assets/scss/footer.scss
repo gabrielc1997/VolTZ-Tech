@@ -1,18 +1,45 @@
-footer{
+footer {
+    .btn-enviar{
+        width: 50%;
+        margin-left: 10px;
+        
+    }
+    .group { 
+        width: 40%;
+        margin: 0px;
+        input {
+            background: unset;
+            border: unset;
+            border-bottom: solid white 2px;
+            margin-top: -23px;
+            width: 100%;
+            &:focus {
+                transition: $transition;
+                outline-offset: unset;
+                outline: unset;
+                margin-top: 10px;
+                width: 100%;
+            }
+            &:focus-within{
+                transition: $transition;
+            }
+        }
 
-    .leades-footer{
-        height: 188px; 
-        p{
+    }
+
+    .leades-footer {
+        height: 188px;
+        p {
             font-size: 24px;
         }
     }
-    .social{
+    .social {
         height: 249px;
-        p{
+        p {
             font-size: 18px;
         }
     }
-    .respiro{
+    .respiro {
         height: 55px;
         width: 100%;
     }

@@ -10,12 +10,16 @@
 
             h2 {
                 font-size: 48px;
+                @media screen and (min-width: $md) {
+                    padding-bottom: 15px !important;
+                }
             }
             p {
                 font-size: 18px;
             }
         }
         .servicos-item {
+
             .col-12{
                 
                 @media screen and (max-width: $md) {

@@ -9,9 +9,20 @@
             font-size: 18px;
         }
     }
-    .cases-box{
-        height: 540px;
-        width: 100%;
-        padding: 24px;
+    .cases-item {
+
+        .col-12{
+            
+            @media screen and (max-width: $md) {
+                padding: 0px !important;
+            }
+        }
+        .item-box {
+            @media screen and (min-width: $md) {
+                height: 350px;
+            }
+            width: 100%;
+            padding: 24px;
+        }
     }
 }
