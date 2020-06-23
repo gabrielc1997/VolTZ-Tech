@@ -20,6 +20,21 @@
         }
         .servicos-item {
 
+            .item-loja{
+                // background-image: url("../images/abstrato.png");
+                // background-size: contain;
+                // background-repeat: no-repeat;
+                background-color: rgba(51, 51, 51, 0.4);
+
+                
+            }
+            .item-marketing{
+                background-image: url("../images/4776.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: white;
+
+            }
             .col-12{
                 
                 @media screen and (max-width: $md) {
@@ -32,10 +47,20 @@
                 }
                 width: 100%;
                 padding: 24px;
+                
+                .cor{
+
+                }
             }
         }
     }
 
 
 @media (min-width: 1200px) {
+}
+.background-1{
+    background-image: url("../images/4776.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
 }
