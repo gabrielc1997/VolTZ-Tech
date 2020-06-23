@@ -1,11 +1,14 @@
 footer {
     .btn-enviar{
-        width: 50%;
+        width: 30%;
         margin-left: 10px;
+        .btn{
+            width: 100%;
+        }
         
     }
     .group { 
-        width: 40%;
+        width: 70%;
         margin: 0px;
         input {
             background: unset;
