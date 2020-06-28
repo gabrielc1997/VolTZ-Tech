@@ -28,7 +28,7 @@
     <header class="position-fixed w-100" style="z-index: 999999;">
 
 
-        <nav class="navbar  navbar-expand-lg navbar-light bgc-white top-navbar" data-toggle="sticky-onscroll">
+        <nav id="menu" class="navbar  navbar-expand-lg navbar-light top-navbar" data-toggle="sticky-onscroll">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -44,23 +44,23 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav pull-right">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active c-white" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Serviços</a>
+                            <a class="nav-link c-white" href="#">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link c-white" href="#">Sobre</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cases</a>
+                            <a class="nav-link c-white" href="#">Cases</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link c-white" href="#">Contato</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="btn btn-primary" href="#">Orçamento</a>
+                        <li class="nav-item ml-md-5">
+                            <a class="btn btn-primary bgc-light-blue" href="#">Orçamento</a>
                         </li>
 
                     </ul>
@@ -69,31 +69,41 @@
             </div>
         </nav>
 
+
     </header>
     <!-- End top header-->
 
     <section id="banner" class="banner">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6 ml-3 align-self-center background-banner">
-                    <h1>
-                        <b class="c-blue">Quer vender mais?</b>
-                    </h1>
-                    <p>
-                        Criamos seu <b class="c-blue">Site</b> ou <b class="c-blue">Loja Virtual</b> com alto poder de
-                        conversão e definimos estratégias de <b class="c-blue">Marketing Digital</b> para que você venda
-                        produtos e serviços pela internet.
-                    </p>
+
+        <div class="text w-100">
+            <div class="container-fluid">
+                <div class="row w-100">
+                    <div class="col-12 ml-3 align-self-center background-banner d-flex align-items-center flex-column">
+                        <h1 class="c-white text-center">
+                            <b class="">impulsione suas vendas</b>
+                        </h1>
+                        <p class="c-white text-center">
+                            Criamos uma estrategia para colocar sua empresa no universo digital
+                            
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div id="particles-js">
+
+        </div>
+
+
     </section>
+
+
     <section class="servicos">
         <div class="container servicos-titulo">
             <div class="row">
                 <div class="col-md-3 col-12 offset-md-3">
                     <h2 class="text-center text-md-right">
-                        <b class="c-light-blue">O que Fazemos?</b>
+                        <b class="c-dark-gray">O que Fazemos?</b>
                     </h2>
                 </div>
                 <div class="col-md-4 col-12 d-flex align-items-center">
@@ -111,8 +121,8 @@
             <div class="row">
                 <div class="col-md-4 col-12 js-tilt" data-tilt data-tilt-max="20" data-tilt-speed="400"
                     data-tilt-perspective="500">
-                    <div class="background-1">
-                        <div class="item-box d-flex align-items-center">
+                    <div class="background-site">
+                        <div class="item-box d-flex align-items-center item-site">
                             <div>
                                 <h3>
                                     Criação de Sites
@@ -127,7 +137,7 @@
                 </div>
                 <div class="col-md-4 col-12 js-tilt" data-tilt data-tilt-max="20" data-tilt-speed="400"
                     data-tilt-perspective="500">
-                    <div class="background-1">
+                    <div class="background-loja">
                         <div class="item-box d-flex align-items-center item-loja">
                             <div class="cor">
                                 <h3>
@@ -143,15 +153,18 @@
                 </div>
                 <div class="col-md-4 col-12 js-tilt" data-tilt data-tilt-max="20" data-tilt-speed="400"
                     data-tilt-perspective="500">
-                    <div class="item-box d-flex align-items-center item-marketing">
-                        <div>
-                            <h3>
-                                Marketing Digital
-                            </h3>
-                            <p>
-                                Atraia clientes e aumente sua taxa de conversão com nossos serviços de Gerenciamento de
-                                Redes Sociais, Inbound Marketing, Infraestrutura, Monitoramento e Métricas.
-                            </p>
+                    <div class="background-mkt">
+                        <div class="item-box d-flex align-items-center item-marketing">
+                            <div>
+                                <h3>
+                                    Marketing Digital
+                                </h3>
+                                <p>
+                                    Atraia clientes e aumente sua taxa de conversão com nossos serviços de Gerenciamento
+                                    de
+                                    Redes Sociais, Inbound Marketing, Infraestrutura, Monitoramento e Métricas.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,33 +172,33 @@
         </div>
     </section>
 
-    <section class="quem-somos bgc-blue">
+    <section class="quem-somos bgc-light-gray">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-md-5 d-none d-md-block bgc-light-gray">
                     <img>
                 </div>
                 <div class="col-md-6 col-12 pl-md-3">
-                    <h2 class="c-white text-center text-md-left">
+                    <h2 class="c-dark-gray text-center text-md-left">
                         A agência VoLTz Tech.
                     </h2>
                     <div>
-                        <p class="c-white text-center text-md-left">
+                        <p class="c-dark-gray text-center text-md-left">
                             Estamos há 2 anos no mercado atendendo clientes de diversos segmentos e portes. Oferecemos o
                             pacote completo de soluções web para as mais diversas necessidades e ramos de atividade, que
                             vão desde a criação de um site, até a implementação da campanha de Marketing Digital.
                         </p>
-                        <p class="c-white text-center text-md-left">
+                        <p class="c-dark-gray text-center text-md-left">
                             Tratamos cada um de nossos clientes de forma individual. Analisando a fundo as necessidades
                             especificas do negócio, somos capazes de oferecer soluções exclusívas de acordo com o
                             orçamento disponível para o projeto. Nosso principal objetivo é maximizar os resultados de
                             nossos clientes.
                         </p>
-                        <p class="c-white text-center text-md-left">
+                        <p class="c-dark-gray text-center text-md-left">
                             Acompanhamos de perto de todas as etapas da transformação do seu negócio: Planejamento,
                             Criação, Produção, Veiculação de campanhas e Acompanhamento de resultados.
                         </p>
-                        <p class="c-white text-center text-md-left">
+                        <p class="c-dark-gray text-center text-md-left">
                             A grande experiência de nossos profissionais nos permite identificar e implementar as
                             melhores estratégias de comunicação para a sua empresa, adequando o orçamento aos objetivos
                             do projeto.
@@ -212,79 +225,41 @@
             </div>
         </div>
         <div class="container cases-item">
-            <div class="row slick-carrosel">
-                <div class="col-md-4 col-12">
-                    <div class="item-box bgc-light-gray d-flex align-items-center">
-                        <div>
-                            <h3>
-                                Lorem ipsum
-                            </h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                    </div>
+            <div class="panel pricing-table">
+
+                <div class="pricing-plan">
+                    <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
+                    <h2 class="pricing-header">Personal</h2>
+                    <ul class="pricing-features">
+                        <li class="pricing-features-item">Custom domains</li>
+                        <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+                    </ul>
+                    <span class="pricing-price">Free</span>
+                    <a href="#/" class="pricing-button">Sign up</a>
                 </div>
-                <div class="col-md-4 col-12">
-                    <div class="item-box bgc-light-gray d-flex align-items-center">
-                        <div>
-                            <h3>
-                                Lorem ipsum
-                            </h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                    </div>
+
+                <div class="pricing-plan">
+                    <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
+                    <h2 class="pricing-header">Small team</h2>
+                    <ul class="pricing-features">
+                        <li class="pricing-features-item">Never sleeps</li>
+                        <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+                    </ul>
+                    <span class="pricing-price">$150</span>
+                    <a href="#/" class="pricing-button is-featured">Free trial</a>
                 </div>
-                <div class="col-md-4 col-12">
-                    <div class="item-box bgc-light-gray d-flex align-items-center">
-                        <div>
-                            <h3>
-                                Lorem ipsum
-                            </h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                    </div>
+
+                <div class="pricing-plan">
+                    <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img">
+                    <h2 class="pricing-header">Enterprise</h2>
+                    <ul class="pricing-features">
+                        <li class="pricing-features-item">Dedicated</li>
+                        <li class="pricing-features-item">Simple horizontal scalability</li>
+                    </ul>
+                    <span class="pricing-price">$400</span>
+                    <a href="#/" class="pricing-button">Free trial</a>
                 </div>
-                <div class="col-md-4 col-12">
-                    <div class="item-box bgc-light-gray d-flex align-items-center">
-                        <div>
-                            <h3>
-                                Lorem ipsum
-                            </h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="item-box bgc-light-gray d-flex align-items-center">
-                        <div>
-                            <h3>
-                                Lorem ipsum
-                            </h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="item-box bgc-light-gray d-flex align-items-center">
-                        <div>
-                            <h3>
-                                Lorem ipsum
-                            </h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -304,7 +279,7 @@
                             <span class="bar"></span>
                         </div>
                         <div class="btn-enviar align-self-end">
-                            <a class="btn btn-primary" href="#">Enviar</a>
+                            <a class="btn btn-primary bgc-light-blue" href="#">Enviar</a>
                         </div>
 
                     </div>
@@ -348,6 +323,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
     </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>

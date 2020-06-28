@@ -1,20 +1,78 @@
 .banner{
-    h1{
-        font-size: 64px;
-    }
-    p{
-        font-size: 24px;
-    }
+  height: 100vh;
     .container-fluid{
-        .row{
-            height: 568px;
-            background-image: url("../images/work.png");
-            background-repeat: no-repeat;
-            background-position: right;
-            .background-banner{
-
-            }
-        }
+      z-index: 1000;
     }
+    .text{
+      height: 100vh;
+      h1{
+        font-size: 88px;
+      }
+      p{
+        font-size: 24px;
+      }
+    }
+
+    #particles-js {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: $blue;
+      }
+      
+      .text {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+      }
+      
+      .img {
+        display: inline-block;
+        height: 100px;
+        z-index: 100;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // h1{
+    //     font-size: 64px;
+    // }
+    // p{
+    //     font-size: 24px;
+    // }
+    // .container-fluid{
+    //     .row{
+    //         height: 568px;
+    //         background-image: url("../images/work.png");
+    //         background-repeat: no-repeat;
+    //         background-position: right;
+    //         .background-banner{
+
+    //         }
+    //     }
+    // }
 
 }

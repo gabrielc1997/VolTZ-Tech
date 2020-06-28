@@ -9,8 +9,15 @@
 }
 
 nav {
-    background: $white;
+
     min-height: 64px;
+
+
+
+
+
+
+
 
     .container {
         display: inline-block;
@@ -20,7 +27,7 @@ nav {
       .bar1, .bar2, .bar3 {
         width: 35px;
         height: 3px;
-        background-color: #333;
+        background-color: #ffffff;
         margin: 6px 0;
         transition: 0.4s;
       }
@@ -35,5 +42,8 @@ nav {
       .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
+      }
+      .navbar-toggler{
+        outline: unset;
       }
   }

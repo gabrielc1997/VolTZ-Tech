@@ -19,21 +19,32 @@
             }
         }
         .servicos-item {
-
-            .item-loja{
-                // background-image: url("../images/abstrato.png");
-                // background-size: contain;
-                // background-repeat: no-repeat;
-                background-color: rgba(51, 51, 51, 0.4);
-
-                
-            }
-            .item-marketing{
+            .background-loja{
                 background-image: url("../images/4776.jpg");
+                
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-color: white;
-
+            }
+            .background-site{
+                background-image: url("../images/4776.jpg");
+                
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .background-mkt{
+                background-image: url("../images/4776.jpg");
+                
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .item-loja{
+                background-color: rgba(51, 51, 51, 0.4);
+            }
+            .item-marketing{
+                background-color: rgba(51, 51, 51, 0.4);
+            }
+            .item-site{
+                background-color: rgba(51, 51, 51, 0.4);
             }
             .col-12{
                 
@@ -57,10 +68,4 @@
 
 
 @media (min-width: 1200px) {
-}
-.background-1{
-    background-image: url("../images/4776.jpg");
-    
-    background-size: cover;
-    background-repeat: no-repeat;
 }
