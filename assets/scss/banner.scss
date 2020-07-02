@@ -11,6 +11,14 @@
       p{
         font-size: 24px;
       }
+      @media screen and (max-width: $md) {
+        h1{
+          font-size: 48px;
+        }
+        p{
+          font-size: 18px;
+        }
+    }
     }
 
     #particles-js {
