@@ -15,7 +15,7 @@ function compilaSass() {
         cascade: false
     }))
     .pipe(gulp.dest('assets/css'))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/assets/css'))
     .pipe(browserSync.stream()); // atualiza os arquivos, sem que seja necessário um reload do browser
 }
 

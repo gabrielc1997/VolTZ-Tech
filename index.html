@@ -31,10 +31,10 @@
         <nav id="menu" class="navbar  navbar-expand-lg navbar-light top-navbar" data-toggle="sticky-onscroll">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                <button class="navbar-toggler" type="button" id="abre-menu" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <div class="container" onclick="myFunction(this)">
+                    <div id="" class="container" onclick="myFunction(this)">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
@@ -44,20 +44,20 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav pull-right">
                         <li class="nav-item">
-                            <a class="nav-link active c-white" href="#">Home</a>
+                            <a class="nav-link active c-white" href="#banner">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link c-white" href="#">Serviços</a>
+                            <a href="#servicos" id="click-servicos" class="nav-link c-white">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link c-white" href="#">Sobre</a>
+                            <a class="nav-link c-white" id="click-quem-somos" href="#quem-somos">Sobre</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link c-white" href="#">Cases</a>
+                            <a class="nav-link c-white" id="click-cases" href="#cases">Cases</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link c-white" href="#">Contato</a>
+                            <a class="nav-link c-white" id="click-contato" href="#contato">Contato</a>
                         </li>
                         <li class="nav-item ml-md-5">
                             <a class="btn btn-primary bgc-light-blue" id="abrirform" href="#">Orçamento</a>
@@ -80,10 +80,10 @@
                 <div class="row w-100">
                     <div class="col-12 ml-3 align-self-center background-banner d-flex align-items-center flex-column">
                         <h1 class="c-white text-center">
-                            <b class="">impulsione suas vendas</b>
+                            <b class="">Impulsione suas vendas</b>
                         </h1>
                         <p class="c-white text-center">
-                            Criamos uma estrategia para colocar sua empresa no universo digital
+                            Criamos a estratégia ideal para colocar sua empresa no universo digital
 
                         </p>
                     </div>
@@ -100,7 +100,7 @@
 
 
 
-    <section class="servicos">
+    <section id="servicos" class="servicos">
         <div class="container servicos-titulo">
             <div class="row">
                 <div class="col-md-3 col-12 offset-md-3">
@@ -174,7 +174,7 @@
         </div>
     </section>
 
-    <section class="quem-somos bgc-light-gray">
+    <section id="quem-somos" class="quem-somos bgc-light-gray">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-md-5 d-none d-md-block bgc-light-gray">
@@ -210,7 +210,7 @@
             </div>
         </div>
     </section>
-    <section class="cases">
+    <section id="cases" class="cases">
         <div class="container cases-title">
             <div class="row  d-flex justify-content-center">
                 <div class="col-10">
@@ -277,7 +277,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer  id="contato">
         <div class="bgc-blue">
             <div class="container bgc-blue">
                 <div class="row leades-footer d-flex align-items-center justify-content-between">
@@ -363,7 +363,7 @@
             </div>
 
         </form>
-        <button id="abrirform">show</button>
+
         
 
 

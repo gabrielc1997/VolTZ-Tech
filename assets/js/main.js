@@ -1,36 +1,19 @@
 
 function myFunction(x) {
-  $('.js-tilt').tilt({
-    scale: 1
-
-  })
-}
-function myFunction(x) {
   x.classList.toggle("change");
+
 }
 
-
-$(document).ready(function () {
-  $('.slick-carrosel').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: true,
-  });
-});
 
 $(document).ready(function () {
   var alturaDivTxt2 = $('#banner').height();
-
   jQuery(window).scroll(function () {
-
     if (jQuery(this).scrollTop() > alturaDivTxt2) {
       $("#menu").addClass("bgc-white");
       $(".nav-link").addClass("c-dark-gray");
       $(".bar1").addClass("bgc-dark-gray");
       $(".bar2").addClass("bgc-dark-gray");
       $(".bar3").addClass("bgc-dark-gray");
-
     } else {
       $("#menu").removeClass("bgc-white");
       $(".nav-link").removeClass("c-dark-gray");
@@ -42,45 +25,93 @@ $(document).ready(function () {
 });
 
 
-
-
+$(document).ready(function () {
+  var element = document.getElementById("theMessage");
+  $("#abrirform").click(function () {
+    $("form").addClass("form-abrir");
+    element.style.visibility = "visible";
+  });
+  $("#fecharform").click(function () {
+    element.style.visibility = "hidden";
+    $("form").removeClass("form-abrir");
+    $("form").addClass("form-fechar");
+  });
+});
 
 
 
 $(document).ready(function () {
 
-
-  var element = document.getElementById("theMessage");
-
-
-  $("#abrirform").click(function () {
-
-    $("form").addClass("form-abrir");
-
-
-    element.style.visibility = "visible";
-
-
+  $("#abre-menu").click(function () {
+    if ($('nav').hasClass('nav-aberto')) {
+      $('nav').removeClass('nav-aberto');
+  } else {
+    $("nav").addClass("nav-aberto");
+   }
   });
-
-
   $("#fecharform").click(function () {
     element.style.visibility = "hidden";
     $("form").removeClass("form-abrir");
-    
     $("form").addClass("form-fechar");
-
-
-
-
-
   });
-
-
 });
 
 
 
+
+
+
+
+
+
+
+
+
+$('#click-servicos').on('click', function(e) {
+  e.preventDefault();
+  var id = $(this).attr('href'),
+  targetOffset = $(id).offset().top;
+    
+  $('html, body').animate({ 
+    scrollTop: targetOffset - 35
+  }, 500);
+});
+$('#click-banner').on('click', function(e) {
+  e.preventDefault();
+  var id = $(this).attr('href'),
+  targetOffset = $(id).offset().top;
+    
+  $('html, body').animate({ 
+    scrollTop: targetOffset - 50
+  }, 500);
+});
+$('#click-cases').on('click', function(e) {
+  e.preventDefault();
+  var id = $(this).attr('href'),
+  targetOffset = $(id).offset().top;
+    
+  $('html, body').animate({ 
+    scrollTop: targetOffset - 50
+  }, 500);
+});
+$('#click-quem-somos').on('click', function(e) {
+  e.preventDefault();
+  var id = $(this).attr('href'),
+  targetOffset = $(id).offset().top;
+    
+  $('html, body').animate({ 
+    scrollTop: targetOffset - 50
+  }, 500);
+});
+$('#click-contato').on('click', function(e) {
+  e.preventDefault();
+  var id = $(this).attr('href'),
+  targetOffset = $(id).offset().top;
+    
+  $('html, body').animate({ 
+    scrollTop: targetOffset - 50
+  }, 500);
+});
 
 
 

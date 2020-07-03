@@ -14,115 +14,159 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+
 
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-            <div class="container topnav">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand topnav" href="http://virtual-dawn.com/index_english.html" target="_blank">Thiago Ferreira</a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#home">Home</a>
+    <!--top header-->
+    <header class="position-fixed w-100" style="z-index: 999999;">
+
+
+        <nav id="menu" class="navbar  navbar-expand-lg navbar-light top-navbar" data-toggle="sticky-onscroll">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" id="abre-menu" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div id="" class="container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav pull-right">
+                        <li class="nav-item">
+                            <a class="nav-link active c-white" href="#banner">Home</a>
                         </li>
-                        <li>
-                            <a href="#about">About</a>
+                        <li class="nav-item">
+                            <a href="#servicos" id="click-servicos" class="nav-link c-white">Serviços</a>
                         </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
+                        <li class="nav-item">
+                            <a class="nav-link c-white" id="click-quem-somos" href="#quem-somos">Sobre</a>
                         </li>
-                       <li>
-                            <a href="#contact">Contact</a>
+
+                        <li class="nav-item">
+                            <a class="nav-link c-white" id="click-cases" href="#cases">Cases</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link c-white" id="click-contato" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item ml-md-5">
+                            <a class="btn btn-primary bgc-light-blue" id="abrirform" href="#">Orçamento</a>
+                        </li>
+
                     </ul>
+
                 </div>
-                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.container -->
         </nav>
+
+
     </header>
+    <!-- End top header-->
 
     <section id="banner" class="banner">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6 ml-3 align-self-center background-banner">
-                    <h1>
-                        lorem ipsum
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet Lorem ipsum<br>
-                        dolor sit amet Lorem ipsum
-                    </p>
+
+        <div class="text w-100">
+            <div class="container-fluid">
+                <div class="row w-100">
+                    <div class="col-12 ml-3 align-self-center background-banner d-flex align-items-center flex-column">
+                        <h1 class="c-white text-center">
+                            <b class="">Impulsione suas vendas</b>
+                        </h1>
+                        <p class="c-white text-center">
+                            Criamos a estratégia ideal para colocar sua empresa no universo digital
+
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div id="particles-js">
+
+        </div>
+
+
     </section>
-    <section class="servicos">
+
+
+
+
+    <section id="servicos" class="servicos">
         <div class="container servicos-titulo">
             <div class="row">
-                <div class="col-6">
-                    <h2 class="text-right">
-                        Lorem ipsum<br>
-                        dolor sit
+                <div class="col-md-3 col-12 offset-md-3">
+                    <h2 class="text-center text-md-right">
+                        <b class="c-dark-gray">O que Fazemos?</b>
                     </h2>
                 </div>
-                <div class="col-6 d-flex align-items-center">
-                    <p class="text-left">
-                        Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-                        dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                <div class="col-md-4 col-12 d-flex align-items-center">
+                    <p class="text-md-left text-center c-dark-gray">
+                        <b class="c-blue">Maximizamos os resultados</b> de nossos clientes, analisando a fundo as
+                        necessidades específicas do negócio e oferecemos soluções <b class="c-blue">exclusivas</b> de
+                        acordo com o orçamento disponível.
+                        <!-- Tratamos cada um de nossos clientes de forma individual.  Analisamos a fundo as necessidades especificas do negócio e oferecemos soluções <b class="c-blue">EXCLUSIVAS</b> de acordo com o orçamento disponivel para o projeto. Com isso, <b class="c-blue">MAXIMIZAMOS os RESULTADOS</b> de nossos clientes. -->
                     </p>
                 </div>
             </div>
         </div>
+
         <div class="container servicos-item">
             <div class="row">
-                <div class="col-4">
-                    <div class="item-box bgc-light-gray d-flex align-items-center">
-                        <div>
-                            <h3>
-                                Lorem ipsum
-                            </h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
+                <div class="col-md-4 col-12 js-tilt" data-tilt data-tilt-max="20" data-tilt-speed="400"
+                    data-tilt-perspective="500">
+                    <div class="background-site">
+                        <div class="item-box d-flex align-items-center item-site">
+                            <div>
+                                <h3>
+                                    Criação de Sites
+                                </h3>
+                                <p>
+                                    Criação de sites profissionais para vários segmentos. Se você está precisando de um
+                                    novo site ou atualizar um site antigo, é só falar conosco!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="item-box bgc-light-gray d-flex align-items-center">
-                        <div>
-                            <h3>
-                                Lorem ipsum
-                            </h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
+                <div class="col-md-4 col-12 js-tilt" data-tilt data-tilt-max="20" data-tilt-speed="400"
+                    data-tilt-perspective="500">
+                    <div class="background-loja">
+                        <div class="item-box d-flex align-items-center item-loja">
+                            <div class="cor">
+                                <h3>
+                                    Criação de Loja Virtual
+                                </h3>
+                                <p>
+                                    Invista na criação de sua loja virtual e tenha uma plataforma profissional e
+                                    personalizada de vendas online, integrada aos Correios e meios de pagamento.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="item-box bgc-light-gray d-flex align-items-center">
-                        <div>
-                            <h3>
-                                Lorem ipsum
-                            </h3>
-                            <p>
-                                Lorem ipsum
-                            </p>
+                <div class="col-md-4 col-12 js-tilt" data-tilt data-tilt-max="20" data-tilt-speed="400"
+                    data-tilt-perspective="500">
+                    <div class="background-mkt">
+                        <div class="item-box d-flex align-items-center item-marketing">
+                            <div>
+                                <h3>
+                                    Marketing Digital
+                                </h3>
+                                <p>
+                                    Atraia clientes e aumente sua taxa de conversão com nossos serviços de Gerenciamento
+                                    de
+                                    Redes Sociais, Inbound Marketing, Infraestrutura, Monitoramento e Métricas.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -130,84 +174,204 @@
         </div>
     </section>
 
-    <section class="quem-somos bgc-blue">
+    <section id="quem-somos" class="quem-somos bgc-light-gray">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-5 bgc-light-gray">
+                <div class="col-md-5 d-none d-md-block bgc-light-gray">
                     <img>
                 </div>
-                <div class="col-7">
-                    <h2 class="c-white">
-                        Lorem ipsum, or lipsum as it is sometimes
+                <div class="col-md-6 col-12 pl-md-3">
+                    <h2 class="c-dark-gray text-center text-md-left">
+                        A agência VoLTz Tech.
                     </h2>
-                    <p class="c-white">
-                        known, is dummy text used in laying out print, graphic or web designs. The passage is attributed
-                        to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's
-                        De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
-
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.”
-                        The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph,
-                        page, etc.) that doesn't distract from the layout. A practice not without controversy, laying
-                        out pages with meaningless filler text can be very useful when the focus is meant to be on
-                        design, not content.
-
-                        The passage experienced a surge in popularity during the 1960s when Letraset used it on their
-                        dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their
-                        software. Today it's seen all around the web; on templates, websites, and stock designs. Use our
-                        generator to get your own, or read on for the authoritative history of lorem ipsum.
-                    </p>
+                    <div>
+                        <p class="c-dark-gray text-center text-md-left">
+                            Estamos há 2 anos no mercado atendendo clientes de diversos segmentos e portes. Oferecemos o
+                            pacote completo de soluções web para as mais diversas necessidades e ramos de atividade, que
+                            vão desde a criação de um site, até a implementação da campanha de Marketing Digital.
+                        </p>
+                        <p class="c-dark-gray text-center text-md-left">
+                            Tratamos cada um de nossos clientes de forma individual. Analisando a fundo as necessidades
+                            especificas do negócio, somos capazes de oferecer soluções exclusívas de acordo com o
+                            orçamento disponível para o projeto. Nosso principal objetivo é maximizar os resultados de
+                            nossos clientes.
+                        </p>
+                        <p class="c-dark-gray text-center text-md-left">
+                            Acompanhamos de perto de todas as etapas da transformação do seu negócio: Planejamento,
+                            Criação, Produção, Veiculação de campanhas e Acompanhamento de resultados.
+                        </p>
+                        <p class="c-dark-gray text-center text-md-left">
+                            A grande experiência de nossos profissionais nos permite identificar e implementar as
+                            melhores estratégias de comunicação para a sua empresa, adequando o orçamento aos objetivos
+                            do projeto.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="cases">
+    <section id="cases" class="cases">
         <div class="container cases-title">
             <div class="row  d-flex justify-content-center">
                 <div class="col-10">
                     <h2 class="text-center">
-                        Lorem ipsum
+                        Preços
                     </h2>
                     <p class="text-center">
                         known, is dummy text used in laying out print, graphic or web designs. The passage is
                         attributed
-                        to an unknown typesetter in the 15th centurys who is thought to have scrambled parts
+                        to an unknown typesetter in the 15th century who is thought to have scrambled parts
                     </p>
 
                 </div>
             </div>
         </div>
-        <div class="container cases-box">
-            <div class="row">
-                <div class="col-6">
-                    <div class="case-item bgc-light-gray d-flex align-items-center">
+        <div class="container cases-item">
+            <div class="panel pricing-table">
 
-                    </div>
+                <div class="pricing-plan">
+                    <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
+                    <h2 class="pricing-header">Personal</h2>
+                    <ul class="pricing-features">
+                        <li class="pricing-features-item">Custom domains</li>
+                        <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+                        <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+                        <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+                        <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+                        <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+                    </ul>
+                    <span class="pricing-price">Free</span>
+                    <a href="#/" class="pricing-button">Sign up</a>
                 </div>
-                <div class="col-6">
-                    <div class="case-item bgc-light-gray d-flex align-items-center">
 
-                    </div>
+                <div class="pricing-plan">
+                    <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
+                    <h2 class="pricing-header">Small team</h2>
+                    <ul class="pricing-features">
+                        <li class="pricing-features-item">Never sleeps</li>
+                        <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+                        <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+                        <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+                        <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+                        <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+                    </ul>
+                    <span class="pricing-price">$150</span>
+                    <a href="#/" class="pricing-button is-featured">Free trial</a>
                 </div>
+
+                <div class="pricing-plan">
+                    <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img">
+                    <h2 class="pricing-header">Enterprise</h2>
+                    <ul class="pricing-features">
+                        <li class="pricing-features-item">Dedicated</li>
+                        <li class="pricing-features-item">Simple horizontal scalability</li>
+                        <li class="pricing-features-item">Simple horizontal scalability</li>
+                        <li class="pricing-features-item">Simple horizontal scalability</li>
+                        <li class="pricing-features-item">Simple horizontal scalability</li>
+                        <li class="pricing-features-item">Simple horizontal scalability</li>
+                    </ul>
+                    <span class="pricing-price">$400</span>
+                    <a href="#/" class="pricing-button">Free trial</a>
+                </div>
+
             </div>
         </div>
     </section>
-    <footer>
+    <footer  id="contato">
         <div class="bgc-blue">
             <div class="container bgc-blue">
-                <div class="row leades-footer d-flex align-items-center">
-                    <div class="col-7">
-                        <p>
-                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
-                            ipsum
+                <div class="row leades-footer d-flex align-items-center justify-content-between">
+                    <div class="col-md-8 col-12">
+                        <p class="c-white text-center text-md-left">
+                            Cadastre seu email e receba promoções, dicas e novidades.
                         </p>
                     </div>
-                    <div class="col-5">
-                        <input class="form-control" type="text" placeholder="Default input">
+                    <div class="col-md-4 col-12 d-flex justify-content-between">
+                        <div class="group d-flex flex-column">
+                            <label class="c-white">Email</label>
+                            <input class="c-white" type="text" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="btn-enviar align-self-end">
+                            <a class="btn btn-primary bgc-light-blue" href="#">Enviar</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
+        <form>
+            <div id="theMessage" class="define-form">
+                <a id="fecharform">hide</a>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Senha">
+                    </div>
+                </div>
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                    value="opcao1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Primeiro radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                    value="opcao2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Segundo radio
+                                </label>
+                            </div>
+                            <div class="form-check disabled">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                    value="opcao3" disabled>
+                                <label class="form-check-label" for="gridRadios3">
+                                    Terceiro radio desativado
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group row">
+                    <div class="col-sm-2">Checkbox</div>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Checkbox exemplo
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+        
+
+
+
+
+
+
+
 
         <div class="container">
             <div class="row bgc-white social d-flex align-items-center">
@@ -232,17 +396,26 @@
     </footer>
 
 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+
 </body>
 
 </html>

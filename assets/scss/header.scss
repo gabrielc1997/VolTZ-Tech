@@ -10,6 +10,13 @@
 .open-nav{
   height: 100vh;
 }
+.nav-aberto{
+  height: 100vh;
+  background-color: $blue !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 nav {
 
     min-height: 64px;
