@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Voltz</title>
+    <link rel="icon" type="imagem/png" href="./assets/images/Logo-2.png" />
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +31,10 @@
 
         <nav id="menu" class="navbar  navbar-expand-lg navbar-light top-navbar" data-toggle="sticky-onscroll">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/Logo.png" alt="" id="logo1" style="width: 95px;">
+                    <img src="./assets/images/Logo-2.png" alt="" class="d-none" id="logo2" style="width: 48px;">
+                </a>
                 <button class="navbar-toggler" type="button" id="abre-menu" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -44,24 +48,32 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav pull-right">
                         <li class="nav-item">
-                            <a class="nav-link active c-white" href="#banner">Home</a>
+                            <a class="nav-link active c-white" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation" href="#banner">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#servicos" id="click-servicos" class="nav-link c-white">Serviços</a>
+                            <a href="#servicos" id="click-servicos" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation" class="nav-link c-white" onclick="myFunction(this)">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link c-white" id="click-quem-somos" href="#quem-somos">Sobre</a>
+                            <a class="nav-link c-white" id="click-quem-somos" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation" href="#quem-somos" onclick="myFunction(this)">Sobre</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link c-white" id="click-cases" href="#cases">Cases</a>
+                            <a class="nav-link c-white" id="click-cases" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation" href="#cases" onclick="myFunction(this)">Cases</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link c-white" id="click-contato" href="#contato">Contato</a>
+                            <a class="nav-link c-white" id="click-contato" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                            aria-label="Toggle navigation" href="#contato" onclick="myFunction(this)">Contato</a>
                         </li>
-                        <li class="nav-item ml-md-5">
-                            <a class="btn btn-primary bgc-light-blue" id="abrirform" href="#">Orçamento</a>
-                        </li>
+
 
                     </ul>
 
@@ -86,6 +98,7 @@
                             Criamos a estratégia ideal para colocar sua empresa no universo digital
 
                         </p>
+                        <a class="btn btn-primary"id="demo" href="#" onclick="myFunction(this)">É isso que eu quero!</a>
                     </div>
                 </div>
             </div>
@@ -277,7 +290,7 @@
             </div>
         </div>
     </section>
-    <footer  id="contato">
+    <footer id="contato">
         <div class="bgc-blue">
             <div class="container bgc-blue">
                 <div class="row leades-footer d-flex align-items-center justify-content-between">
@@ -300,71 +313,103 @@
                 </div>
             </div>
         </div>
+        <form id="contactform" method="post" action="sendmail.php">
+            <div class="itens-form">
+                <div class="itens-border">
+                    <a id="fecharform">
+                        <svg class="svg-icon" style="width: 33px;" viewBox="0 0 20 20">
+                            <path fill="#000000"
+                                d="M12.71,7.291c-0.15-0.15-0.393-0.15-0.542,0L10,9.458L7.833,7.291c-0.15-0.15-0.392-0.15-0.542,0c-0.149,0.149-0.149,0.392,0,0.541L9.458,10l-2.168,2.167c-0.149,0.15-0.149,0.393,0,0.542c0.15,0.149,0.392,0.149,0.542,0L10,10.542l2.168,2.167c0.149,0.149,0.392,0.149,0.542,0c0.148-0.149,0.148-0.392,0-0.542L10.542,10l2.168-2.168C12.858,7.683,12.858,7.44,12.71,7.291z M10,1.188c-4.867,0-8.812,3.946-8.812,8.812c0,4.867,3.945,8.812,8.812,8.812s8.812-3.945,8.812-8.812C18.812,5.133,14.867,1.188,10,1.188z M10,18.046c-4.444,0-8.046-3.603-8.046-8.046c0-4.444,3.603-8.046,8.046-8.046c4.443,0,8.046,3.602,8.046,8.046C18.046,14.443,14.443,18.046,10,18.046z">
+                            </path>
+                        </svg>
+                    </a>
+                    <div class=" d-flex justify-content-start">
+                        <div class="form-total">
 
-        <form>
-            <div id="theMessage" class="define-form">
-                <a id="fecharform">hide</a>
-                <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Senha</label>
-                    <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="Senha">
-                    </div>
-                </div>
-                <fieldset class="form-group">
-                    <div class="row">
-                        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                        <div class="col-sm-10">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                    value="opcao1" checked>
-                                <label class="form-check-label" for="gridRadios1">
-                                    Primeiro radio
-                                </label>
+                            <div class="conj-input mb-3">
+
+                                <div class="input-container">
+                                    <input id="name" class="input" name="nome" type="text" pattern=".+" required />
+                                    <label class="label" for="name">Nome</label>
+                                </div>
+
+
+                                <div class="input-container mt-4">
+                                    <input id="email" class="input" name="email" type="text" pattern=".+" required />
+                                    <label class="label" for="email">E-mail</label>
+                                </div>
+
+                                <div class="input-container mt-4">
+                                    <input id="telefone" class="input" name="telefone" type="text" pattern=".+"
+                                        required />
+                                    <label class="label" for="telefone">Telefone</label>
+                                </div>
+
+                                <div class="input-container mt-4">
+                                    <input id="empresa" class="input" name="empresa" type="text" pattern=".+"
+                                        required />
+                                    <label class="label" for="empresa">Nome da Empresa</label>
+                                </div>
+
+                                <div class="input-container mt-4 mb-4">
+                                    <input id="site" class="input" name="site" type="text" pattern=".+" required />
+                                    <label class="label" for="site">Site</label>
+                                </div>
+
+
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                    value="opcao2">
-                                <label class="form-check-label" for="gridRadios2">
-                                    Segundo radio
-                                </label>
+
+
+
+
+
+
+
+                            <div class="input-group d-flex align-items-left flex-column">
+                                <label for="servicos mb-2">Interesse</label>
+
+                                <div class="checkbox">
+                                    <input type="checkbox" id="site-check" class="checkbox-custom" value="Site"
+                                        name="servicos">
+                                    <label class="checkbox-custom-label" for="site-check">Site</label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input type="checkbox" id="mkt" class="checkbox-custom" value="Marketing Digital"
+                                        name="servicos">
+                                    <label class="checkbox-custom-label" for="mkt">Marketing
+                                        Digital
+                                    </label>
+                                </div>
+
+                                <div class="checkbox">
+                                    <input type="checkbox" id="loja" class="checkbox-custom" value="Loja Virtual"
+                                        name="servicos">
+                                    <label class="checkbox-custom-label" for="loja">Loja Virtual</label>
+                                </div>
+
+
+
+
+
+
                             </div>
-                            <div class="form-check disabled">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
-                                    value="opcao3" disabled>
-                                <label class="form-check-label" for="gridRadios3">
-                                    Terceiro radio desativado
-                                </label>
-                            </div>
+                            <input class="button-sendmail mt-3" type="submit" value="Enviar" />
+                            <div id="resp" class="resposta"></div>
                         </div>
-                    </div>
-                </fieldset>
-                <div class="form-group row">
-                    <div class="col-sm-2">Checkbox</div>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Checkbox exemplo
-                            </label>
+                        <div class="img-form">
+                            
                         </div>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Entrar</button>
                     </div>
                 </div>
             </div>
 
         </form>
 
-        
+
+
+
+
 
 
 
@@ -413,6 +458,8 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js">
     </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="./form.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
 
 

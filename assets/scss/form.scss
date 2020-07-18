@@ -1,46 +1,219 @@
-
-#abrirform{
-
+#abrirform {
 }
-#fecharform{
-    
+#fecharform {
 }
 
-
-
-
-
-form{
+form {
     display: none;
     position: fixed;
     width: 100%;
-    background-color: rgba(129, 109, 189, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.3);
     height: 100vh;
-    z-index: 999999;
+    z-index: 150;
     left: 50%;
-    top: 50%; 
+    top: 50%;
     transform: translateX(-50%) translateY(-50%);
 
-    .define-form{
-        margin-top: 10%;
-        margin-bottom: 10%;
-        margin-left: 20%;
-        margin-right: 20%;
-        
-        background-color: white;
-        z-index: 999999999;
+
+    .img-form{
 
     }
 
+    .form-total{
+        width: 50%;
+
+    }
+
+    .input-group {
+
+        
+        label{
+            font-size: 24px;
+            color: #616161;
+        }
+
+
+
+
+
+
+
+        .checkbox-custom {
+            opacity: 0;
+            position: absolute;
+          }
+          .checkbox-custom,
+          .checkbox-custom-label {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            color: #616161;
+          }
+          .checkbox-custom + .checkbox-custom-label:before {
+            content: '';
+            background: #fff;
+            border-radius: 20px;
+            border: 1px solid $blue;
+            display: inline-block;
+            vertical-align: middle;
+            width: 10px;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            text-align: center;
+          }
+          .checkbox-custom:checked + .checkbox-custom-label:before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 19px;
+            border: solid $blue;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            border-radius: 0px;
+            margin: 0px 15px 5px 5px;
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    }
+    .conj-input {
+        width: 100%;
+
+        /* Estrutura */
+        .input-container {
+            position: relative;
+        }
+
+        input {
+            border: 0;
+            border-bottom: 2px solid #9e9e9e;
+            outline: none;
+            transition: 0.2s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        label {
+            top: 0;
+            left: 0;
+            right: 0;
+            color: #616161;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            font-size: 1rem;
+            cursor: text;
+            transition: 0.2s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        input,
+        label {
+            width: 100%;
+            height: 3rem;
+            font-size: 24px;
+        }
+
+        /* Interation */
+        input:valid,
+        input:focus {
+            border-bottom: 2px solid $blue;
+        }
+
+        input:valid + label,
+        input:focus + label {
+            color: $blue;
+            font-size: 0.8rem;
+            top: -30px;
+            pointer-events: none;
+        }
+    }
+
+    svg {
+        float: right;
+    }
+
+    .resposta {
+        color: green;
+    }
+
+    .itens-form {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background: white;
+        
+        background-size: contain;
+        width: 60%;
+        background-repeat: no-repeat;
+        background-position: right;
+        
+        padding: 40px;
+
+        @media screen and (min-width: $md) {
+            background-image: url("../images/683.jpg");
+        }
+
+        .itens-border {
+
+        }
+        p {
+            font-size: 21px;
+        }
+        // input {
+        //     width: 40%;
+        //     height: 30px;
+        //     border-radius: 60px;
+        //     border: 1px solid gray;
+        // }
+
+        textarea {
+            width: 70%;
+        }
+        .button-sendmail {
+            width: 40%;
+            height: 40px;
+            background-color: unset;
+            border: 2px solid $blue;
+            font-size: 26px;
+        }
+    }
 }
 
-.form-abrir{
-    display: block !important;
-
-}
-.form-fechar{
+.form-fechar {
     display: none;
 }
-
-
-

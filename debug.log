@@ -1,0 +1,18 @@
+[0716/095957.808:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0716/095957.763:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0716/095957.805:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0716/095957.760:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0716/095957.760:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0716/095957.808:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0716/095957.767:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0716/095957.760:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0716/095957.812:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[0716/095958.023:ERROR:exception_snapshot_win.cc(98)] thread ID 21680 not found in process
+[0716/095958.023:ERROR:exception_snapshot_win.cc(98)] thread ID 19488 not found in process
+[0716/095958.023:ERROR:exception_snapshot_win.cc(98)] thread ID 9928 not found in process
+[0716/095958.023:ERROR:exception_snapshot_win.cc(98)] thread ID 18332 not found in process
+[0716/095958.023:ERROR:exception_snapshot_win.cc(98)] thread ID 20004 not found in process
+[0716/095958.023:ERROR:exception_snapshot_win.cc(98)] thread ID 18216 not found in process
+[0716/095958.023:ERROR:exception_snapshot_win.cc(98)] thread ID 19736 not found in process
+[0716/095958.023:ERROR:exception_snapshot_win.cc(98)] thread ID 19344 not found in process
+[0716/095958.024:ERROR:exception_snapshot_win.cc(98)] thread ID 16736 not found in process
