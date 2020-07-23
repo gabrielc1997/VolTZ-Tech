@@ -1,24 +1,31 @@
 .banner{
   height: 100vh;
+  #demo{
+    border: 2px solid white;
+    background-color: unset;
+    padding: 5px 20px 5px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
     .container-fluid{
-      z-index: 1000;
+      z-index: 100;
     }
     .text{
       height: 100vh;
-      h1{
-        font-size: 88px;
-      }
-      p{
-        font-size: 24px;
-      }
-      @media screen and (max-width: $md) {
         h1{
-          font-size: 48px;
+          font-size: 88px;
         }
         p{
-          font-size: 18px;
+          font-size: 24px;
         }
-    }
+        @media screen and (max-width: $md) {
+          h1{
+            font-size: 48px;
+          }
+          p{
+            font-size: 18px;
+          }
+      }
     }
 
     #particles-js {

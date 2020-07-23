@@ -10,12 +10,20 @@ $(document).ready(function () {
   jQuery(window).scroll(function () {
     if (jQuery(this).scrollTop() > alturaDivTxt2) {
       $("#menu").addClass("bgc-white");
+      $("#logo1").addClass("d-none");
+      $("#logo1").removeClass("d-block");
+      $("#logo2").addClass("d-block");
+      $("#logo2").removeClass("d-none");
       $(".nav-link").addClass("c-dark-gray");
       $(".bar1").addClass("bgc-dark-gray");
       $(".bar2").addClass("bgc-dark-gray");
       $(".bar3").addClass("bgc-dark-gray");
     } else {
       $("#menu").removeClass("bgc-white");
+      $("#logo1").removeClass("d-none");
+      $("#logo1").addClass("d-block");
+      $("#logo2").removeClass("d-block");
+      $("#logo2").addClass("d-none");
       $(".nav-link").removeClass("c-dark-gray");
       $(".bar1").removeClass("bgc-dark-gray");
       $(".bar2").removeClass("bgc-dark-gray");
@@ -25,18 +33,7 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function () {
-  var element = document.getElementById("theMessage");
-  $("#abrirform").click(function () {
-    $("form").addClass("form-abrir");
-    element.style.visibility = "visible";
-  });
-  $("#fecharform").click(function () {
-    element.style.visibility = "hidden";
-    $("form").removeClass("form-abrir");
-    $("form").addClass("form-fechar");
-  });
-});
+
 
 
 
@@ -45,15 +42,27 @@ $(document).ready(function () {
   $("#abre-menu").click(function () {
     if ($('nav').hasClass('nav-aberto')) {
       $('nav').removeClass('nav-aberto');
+      $("#click-servicos").animate({position: 'absolute', left: '250px'});
   } else {
     $("nav").addClass("nav-aberto");
    }
   });
-  $("#fecharform").click(function () {
-    element.style.visibility = "hidden";
-    $("form").removeClass("form-abrir");
-    $("form").addClass("form-fechar");
+
+});
+
+$(document).ready(function () {
+
+  $(".nav-link").click(function () {
+    if ($('nav').hasClass('nav-aberto')) {
+      $('nav').removeClass('nav-aberto');
+      $('#abre-menu').addClass('collapsed');
+      myFunction(x);
+
+  } else {
+    
+   }
   });
+
 });
 
 
@@ -61,6 +70,78 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function detectar_mobile() { 
+//   if( navigator.userAgent.match(/Android/i)
+//   || navigator.userAgent.match(/webOS/i)
+//   || navigator.userAgent.match(/iPhone/i)
+//   || navigator.userAgent.match(/iPad/i)
+//   || navigator.userAgent.match(/iPod/i)
+//   || navigator.userAgent.match(/BlackBerry/i)
+//   || navigator.userAgent.match(/Windows Phone/i)
+//   ){
+     
+//      $(document).ready(function(){
+//       $("button").click(function(){
+//         $("div").animate({left: '250px'});
+//       });
+//     });
+//    }
+//   else {
+//      return false;
+//    }
+//  }
 
 
 
