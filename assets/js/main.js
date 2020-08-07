@@ -204,7 +204,7 @@ $('#click-banner').on('click', function(e) {
     scrollTop: targetOffset - 50
   }, 500);
 });
-$('#click-cases').on('click', function(e) {
+$('#click-precos').on('click', function(e) {
   e.preventDefault();
   var id = $(this).attr('href'),
   targetOffset = $(id).offset().top;

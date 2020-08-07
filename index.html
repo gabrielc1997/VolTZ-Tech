@@ -64,9 +64,9 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav pull-right">
                         <li class="nav-item">
-                            <a class="nav-link active c-white" data-toggle="collapse"
+                            <a href="#banner" id="click-banner" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                            aria-label="Toggle navigation" href="#banner">Home</a>
+                            aria-label="Toggle navigation" class="nav-link c-white" onclick="myFunction(this)">Início</a>
                         </li>
                         <li class="nav-item">
                             <a href="#servicos" id="click-servicos" data-toggle="collapse"
@@ -80,9 +80,9 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link c-white" id="click-cases" data-toggle="collapse"
+                            <a class="nav-link c-white" id="click-precos" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                            aria-label="Toggle navigation" href="#cases" onclick="myFunction(this)">Cases</a>
+                            aria-label="Toggle navigation" href="#precos" onclick="myFunction(this)">Preços</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link c-white" id="click-contato" data-toggle="collapse"
@@ -102,7 +102,6 @@
     <!-- End top header-->
 
     <section id="banner" class="banner"> 
-
         <div class="text w-100" >
             <div class="container-fluid">
                 <div class="row w-100" >
@@ -127,7 +126,7 @@
     </section>
 
 
-    <section id="servicos" class="servicos">
+    <section id="porquefazemos" class="servicos">
         <div class="container servicos-titulo">
             <div class="row">
                 <div class="col-md-3 col-12 offset-md-1">
@@ -329,8 +328,8 @@
             </div>
         </div>
     </section>
-    <section id="cases" class="cases">
-        <div class="container cases-title">
+    <section id="precos" class="precos">
+        <div class="container precos-title">
             <div class="row  d-flex justify-content-center">
                 <div class="col-10">
                     <h2 class="text-center">
@@ -345,7 +344,7 @@
                 </div>
             </div>
         </div>
-        <div class="container cases-item">
+        <div class="container precos-item">
             <div class="panel pricing-table">
 
                 <div class="pricing-plan">
