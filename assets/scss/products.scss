@@ -1,0 +1,62 @@
+.products{
+    .banner{
+        height: 85vh;
+        background-color: gray;
+          .container-fluid{
+            z-index: 100;
+          }
+          .text{
+            height: 100vh;
+              h1{
+                font-size: 88px;
+              }
+              p{
+                font-size: 24px;
+                margin-bottom: 64px;
+              }
+              @media screen and (max-width: $md) {
+                h1{
+                  font-size: 48px;
+                }
+                p{
+                  font-size: 18px;
+                }
+            }
+          }
+      
+          #particles-js {
+              position: relative;
+              height: 100%;
+              width: 100%;
+              background-color: $blue;
+            }
+            
+            .text {
+              position: absolute;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+      
+      
+            }
+            
+            .img {
+              display: inline-block;
+              height: 100px;
+              z-index: 100;
+            }
+      
+      
+ 
+      
+      }
+}
+.content-product{
+    p{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+}
