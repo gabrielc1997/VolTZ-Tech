@@ -1,0 +1,185 @@
+
+
+
+
+
+.ascention{
+  background-image: url("../images/lua_v2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-style: none;
+}
+
+
+.inpulsion{
+  background-image: url("../images/look_to_the_space_v2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-style: none;
+}
+
+
+
+
+
+
+
+.banner-product{
+    height: 65vh;
+
+
+
+
+
+
+    #demo{
+      border: 2px solid $purple;
+      background-color: $purple;
+      padding: 5px 20px 5px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      &:hover{
+        border: 2px solid $pink;
+        background-color: unset;
+        padding: 5px 20px 5px 20px;
+        font-size: 16px;
+        color: $pink;
+      }
+    }
+  
+      .container-fluid{
+        z-index: 100;
+      }
+      .text{
+        height: 65vh;
+          h1{
+            font-size: 88px;
+          }
+          p{
+            font-size: 24px;
+            margin-bottom: 64px;
+          }
+          @media screen and (max-width: $md) {
+            h1{
+              font-size: 48px;
+            }
+            p{
+              font-size: 18px;
+            }
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      .container-fluid{
+        z-index: 100;
+      }
+      .text{
+
+          h1{
+            font-size: 88px;
+          }
+          p{
+            font-size: 24px;
+          }
+          @media screen and (max-width: $md) {
+            h1{
+              font-size: 48px;
+            }
+            p{
+              font-size: 18px;
+            }
+        }
+      }
+  
+
+        
+        .text {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+  
+        }
+        
+        .img {
+          display: inline-block;
+          height: 100px;
+          z-index: 100;
+        }
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #demo-1{
+          border: 2px solid $purple;
+          background-color: $purple;
+          padding: 5px 20px 5px 20px;
+          font-size: 16px;
+        
+          &:hover{
+            border: 2px solid $pink;
+            background-color: unset;
+            padding: 5px 20px 5px 20px;
+            font-size: 16px;
+            color: $pink !important;
+          }
+        }
+        
+        
+        
+
+          
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  }

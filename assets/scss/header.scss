@@ -24,8 +24,9 @@ nav {
 
 
 a{
-  font-weight: 500;
+  font-weight: 700;
 }
+
 
 
 
@@ -58,3 +59,46 @@ a{
         outline: unset;
       }
   }
+
+
+  .btn-negative{
+    border: 2px solid $purple;
+    background-color: $purple;
+    padding: 5px 20px 5px 20px;
+    font-size: 16px;
+    margin-left: 20px;
+    color: white;
+    &:hover{
+      border: 2px solid $purple;
+      background-color: unset;
+      padding: 5px 20px 5px 20px;
+      font-size: 16px;
+      color: $purple;
+    }
+  }
+    .btn-menu{
+      border: 2px solid $purple;
+      background-color: $purple;
+      padding: 5px 20px 5px 20px;
+      font-size: 16px;
+      margin-left: 20px;
+      &:hover{
+        border: 2px solid #fb7268;
+        background-color: unset;
+        padding: 5px 20px 5px 20px;
+        font-size: 16px;
+        color: #fb7268 !important;
+      }
+    }
+
+
+
+    header{
+      a:hover{
+        color: $pink !important;
+      }
+    }
+
+    .upper{
+      text-transform: uppercase;;
+    }

@@ -5,8 +5,16 @@ function myFunction(x) {
 }
 
 
+
+
+
+
+
+
+
 $(document).ready(function () {
   var alturaDivTxt2 = $('#banner').height();
+  
   jQuery(window).scroll(function () {
     if (jQuery(this).scrollTop() > alturaDivTxt2) {
       $("#menu").addClass("bgc-white");
@@ -18,6 +26,9 @@ $(document).ready(function () {
       $(".bar1").addClass("bgc-dark-gray");
       $(".bar2").addClass("bgc-dark-gray");
       $(".bar3").addClass("bgc-dark-gray");
+      $(".ativo").removeClass("btn-menu");
+      $(".ativo").addClass("btn-negative");
+
     } else {
       $("#menu").removeClass("bgc-white");
       $("#logo1").removeClass("d-none");
@@ -27,15 +38,26 @@ $(document).ready(function () {
       $(".nav-link").removeClass("c-dark-gray");
       $(".bar1").removeClass("bgc-dark-gray");
       $(".bar2").removeClass("bgc-dark-gray");
-      $(".bar3").removeClass("bgc-dark-gray")
+      $(".bar3").removeClass("bgc-dark-gray");
+      $(".ativo").removeClass("btn-negative");
+      $(".ativo").addClass("btn-menu");
     }
   });
 });
 
 
 
+setTimeout(function(){
+  $( "#tag-4883302-1831532" ).prop( "checked", true );
+  $( "#tag-4885689-1824389" ).prop( "checked", true );
+  
 
 
+  $('.formkit-submit').attr('onclick', 'window.location.href=\'http://voltz.tech/#\';');
+
+  
+  $('.formkit-checkboxes').css('display','none');
+  }, 3000);
 
 $(document).ready(function () {
 
@@ -67,119 +89,7 @@ $(document).ready(function () {
 
 
 
-// Begin Teste Rodrigo 
-//Bgin timeline
 
-(function() {
-
-  'use strict';
-
-  // define variables
-  var items = document.querySelectorAll(".timeline li");
-
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function callbackFunc() {
-    for (var i = 0; i < items.length; i++) {
-      if (isElementInViewport(items[i])) {
-        items[i].classList.add("in-view");
-      }
-    }
-  }
-
-  // listen for events
-  window.addEventListener("load", callbackFunc);
-  window.addEventListener("resize", callbackFunc);
-  window.addEventListener("scroll", callbackFunc);
-
-})();
-
-//End timeline
-// End Teste Rodrigo 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function detectar_mobile() { 
-//   if( navigator.userAgent.match(/Android/i)
-//   || navigator.userAgent.match(/webOS/i)
-//   || navigator.userAgent.match(/iPhone/i)
-//   || navigator.userAgent.match(/iPad/i)
-//   || navigator.userAgent.match(/iPod/i)
-//   || navigator.userAgent.match(/BlackBerry/i)
-//   || navigator.userAgent.match(/Windows Phone/i)
-//   ){
-     
-//      $(document).ready(function(){
-//       $("button").click(function(){
-//         $("div").animate({left: '250px'});
-//       });
-//     });
-//    }
-//   else {
-//      return false;
-//    }
-//  }
 
 
 
@@ -192,7 +102,7 @@ $('#click-servicos').on('click', function(e) {
   targetOffset = $(id).offset().top;
     
   $('html, body').animate({ 
-    scrollTop: targetOffset - 35
+    scrollTop: targetOffset - 100
   }, 500);
 });
 $('#click-banner').on('click', function(e) {
@@ -204,24 +114,17 @@ $('#click-banner').on('click', function(e) {
     scrollTop: targetOffset - 50
   }, 500);
 });
-$('#click-precos').on('click', function(e) {
+
+$('#click-funciona').on('click', function(e) {
   e.preventDefault();
   var id = $(this).attr('href'),
   targetOffset = $(id).offset().top;
     
   $('html, body').animate({ 
-    scrollTop: targetOffset - 50
+    scrollTop: targetOffset + 1
   }, 500);
 });
-$('#click-quem-somos').on('click', function(e) {
-  e.preventDefault();
-  var id = $(this).attr('href'),
-  targetOffset = $(id).offset().top;
-    
-  $('html, body').animate({ 
-    scrollTop: targetOffset - 50
-  }, 500);
-});
+
 $('#click-contato').on('click', function(e) {
   e.preventDefault();
   var id = $(this).attr('href'),

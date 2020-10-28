@@ -1,74 +1,59 @@
- 
-    .servicos {
-        @media screen and (min-width: $md) {
-            margin-top: 48px;
-            margin-bottom: 48px;
-        }
-        .servicos-titulo {
-            padding-top: 24px;
-            padding-bottom: 24px;
+.servicos {
 
-            h2 {
-                font-size: 48px;
-                @media screen and (min-width: $md) {
-                    padding-bottom: 15px !important;
-                }
-            }
-            p {
-                font-size: 18px;
+    .content-card-button {
+        width: 30%;
+    }
+    .content-services {
+        width: 100%;
+    }
+    .servicos-item {
+        .background-site {
+            background-color: #270082;
+            background-image: url("../images/look_to_the_space_v2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-style: none;
+        }
+        
+
+
+
+
+        
+        .background-mkt {
+            background-color: #2f009c;
+            background-image: url("../images/lua_v2.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-style: none;
+        }
+
+        .item-loja {
+            background-color: rgba(0, 0, 0, 0.01);
+        }
+        .item-marketing {
+            background-color: rgba(0, 0, 0, 0.01);
+        }
+        .item-site {
+            background-color: rgba(0, 0, 0, 0.01);
+        }
+        .col-12 {
+            @media screen and (max-width: $md) {
+                padding: 0px !important;
             }
         }
-        .servicos-item {
-            .background-loja{
-                background-image: url("../images/card_servicos_lojavirtual.gif");
-                
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-style: ridge;
+        .item-box {
+            @media screen and (min-width: $md) {
+                height: 500px;
             }
-            .background-site{
-                background-image: url("../images/card_servicos_sites.gif");
-                
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-style: ridge;
-            }
-            .background-mkt{
-                background-image: url("../images/card_servicos_mktdigital.gif");
-                
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-style: ridge;
-            }
-            .item-loja{
-                background-color: rgba(0, 0, 0, 0.01);
-            }
-            .item-marketing{
-                background-color: rgba(0, 0, 0, 0.01);
-            }
-            .item-site{
-                background-color: rgba(0, 0, 0, 0.01);
-            }
-            .col-12{
-                
-                @media screen and (max-width: $md) {
-                    padding: 0px !important;
-                }
-            }
-            .item-box {
-                @media screen and (min-width: $md) {
-                    height: 350px;
-                }
-                width: 100%;
-                padding: 24px;
-                
-                .cor{
+            width: 100%;
+            padding: 24px;
 
-                }
+            .cor {
             }
         }
     }
-
+}
 
 @media (min-width: 1200px) {
 }

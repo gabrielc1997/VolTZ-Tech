@@ -1,12 +1,37 @@
-.banner{
-  height: 100vh;
-  #demo{
-    border: 2px solid white;
+#demo-1{
+  border: 2px solid $purple;
+  background-color: $purple;
+  padding: 5px 20px 5px 20px;
+  font-size: 16px;
+
+  &:hover{
+    border: 2px solid $pink;
     background-color: unset;
     padding: 5px 20px 5px 20px;
     font-size: 16px;
-    margin-top: 20px;
+    color: $pink !important;
   }
+}
+
+
+
+.banner{
+  height: 100vh;
+  #demo{
+    border: 2px solid $purple;
+    background-color: $purple;
+    padding: 5px 20px 5px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    &:hover{
+      border: 2px solid $pink;
+      background-color: unset;
+      padding: 5px 20px 5px 20px;
+      font-size: 16px;
+      color: $pink !important;
+    }
+  }
+
     .container-fluid{
       z-index: 100;
     }
@@ -51,9 +76,7 @@
         z-index: 100;
       }
 
-
-
-
+      
 
 
 
@@ -92,3 +115,4 @@
     // }
 
 }
+  

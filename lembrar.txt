@@ -6,3 +6,17 @@ git commit -m "nome_da_atualização"
 git push
 
 git pull
+
+
+
+
+
+
+
+
+
+- adicionar evento formView ao pixel do site X
+- colocar assunto nos emails de contato voltz.tech 
+- adicionar pixel de pageView para os produtos X
+- estudar api convertkit e integrar form ao site
+- trocar favicon paginas de produto

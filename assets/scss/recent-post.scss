@@ -1,0 +1,35 @@
+.recent-post{
+    padding-top: 100px;
+
+    .img-post{
+        width: 60%;
+        @media screen and (max-width: $md){
+            width: 100%;
+        }
+    }
+    a:hover {
+        text-decoration: none !important;
+
+    }
+    .content-card-post {
+        background-color: white;
+    }
+    .content-card-post:hover {
+        -webkit-box-shadow: 0 22px 60px rgba(10, 10, 10, 0.3);
+        -moz-box-shadow: 0 22px 60px rgba(10, 10, 10, 0.3);
+        box-shadow: 0 22px 60px rgba(10, 10, 10, 0.3);
+        transition: $transition;
+    }
+    .content-text{
+        padding: 20px;
+    }
+    .recent-post-date{
+        a{
+            font-size: 14px;
+        }
+    }
+    .category-style{
+        color: $blue;
+        font-size: 14px;
+    }
+}

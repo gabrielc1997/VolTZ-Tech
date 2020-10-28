@@ -1,0 +1,27 @@
+.page-blog{
+    padding-top: 100px;
+
+    .card-blog{
+        border: 1px solid $dark-gray;
+    }
+
+    p{
+        text-align: center;
+    }
+
+
+
+
+
+
+
+    .img-blog{
+        img{
+            max-width: 100%;
+        height: auto;
+        }
+    }
+}
+.box-cat{
+    display: none;
+}
